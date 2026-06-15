@@ -18,3 +18,16 @@ import Foundation
  print(error)
  }
  */
+
+//func loadData() async {
+//do {
+//let url = URL(string: "https://practicalswiftconcurrency.com")!
+//let (data, response) = try await URLSession.shared.data(from:
+//url)→
+//let decoder = JSONDecoder()
+//let model = try decoder.decode(Model.self, from: data)
+//// use model...
+//} catch {
+//// something went wrong, handle the error
+//}
+//}
