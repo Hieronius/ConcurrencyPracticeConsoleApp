@@ -24,4 +24,16 @@ import Foundation
 		 return newFormatter
 	 }
  }
+ 
+ actor DateFormatters {
+	 private var formatters: [String: DateFormatter] = [:]
+	 private let _defaultFormatter = ISO8601DateFormatter()
+	 nonisolated func defaultFormatter() -> ISO8601DateFormatter {
+		 return _defaultFormatter
+	 }
+	 // ...
+ }
+
+ let actor = DateFormatters()
+ let formatter = actor.defaultFormatter()
  */
