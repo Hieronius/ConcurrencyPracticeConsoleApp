@@ -30,3 +30,4 @@ var sample: @Sendable () -> Void = {
 let isFavorite = movie.isFavorite
 var sample1: @Sendable () -> Void = { [isFavorite] in
 	print(isFavorite)
+}
